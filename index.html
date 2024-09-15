@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container form {
+            margin-bottom: 20px;
+        }
+
+        .login-container .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .login-container .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .login-container .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-container .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4f9d9d;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container .form-group button:hover {
+            background-color: #3a8b8b;
+        }
+
+        .login-container .social-icons {
+            margin-top: 20px;
+        }
+
+        .login-container .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .login-container .social-icons a:hover {
+            color: #4f9d9d;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" title="Login with Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" title="Login with Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+</html>
